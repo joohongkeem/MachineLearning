@@ -175,6 +175,7 @@ model.fit(X_train, y_train)
 x_new = np.linspace(np.min(X_train), np.max(X_train), 100)
         # y = linspace(x1,x2)는 x1과 x2 사이에서 균일한 간격의 점 100개로 구성된 행 벡터를 반환합니다.
         # y = linspace(x1,x2,n)은 n개의 점을 생성합니다. 점 사이의 간격은 (x2-x1)/(n-1)입니다.
+        # default = 50
 
 # 1행 N열의 데이터를 N행 1열로 reshape
 X_new = x_new.reshape(-1, 1)
