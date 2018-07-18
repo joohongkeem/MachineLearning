@@ -88,6 +88,7 @@ def fruit_graph():
 # -> 사과를 2개 갖고 있고, 망고를 3개 갖고 있고, tax=1.1 일 때,
 #    target(720)원을 벌고싶으면 사과와 망고의 가격을 어느정도로 정해야 하는가!
 #
+# -> 편미분을 하나도 사용하지 않고 역전파를 구현했다 !! ★★
 def back_propagation():
     apple_count = 2
     mango_count = 3
