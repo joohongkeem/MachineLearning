@@ -124,6 +124,7 @@ def back_propagation():
         d_apple_price, d_apple_count = layer_apple.backward(d_apple_total)
         d_mango_price, d_mango_count = layer_mango.backward(d_mango_total)
 
+        # ★★★★★★★★★★★★★★★★★★★★ 핵심코드 ★★★★★★★★★★★★★★★★★★★★★★
         apple_price -= 0.1 * d_apple_price
         mango_price -= 0.1 * d_mango_price
 
